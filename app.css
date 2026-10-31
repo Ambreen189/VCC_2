@@ -244,3 +244,55 @@ footer {
     border-bottom: 2px solid #c89452;
     padding-bottom: 5px;
 }
+
+/* Interactive Skills Section */
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-section>p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Skills Grid */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Individual Skill Cards */
+.skill-card {
+    background-color: #fffdf9;
+    border: 1px solid #e5d9ca;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(59, 39, 35, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Interactive Hover Effect */
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(59, 39, 35, 0.15);
+    border-color: #c89452;
+}
+
+/* Skill Card Heading */
+.skill-card h3 {
+    color: #3b2723;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Skill Card Description */
+.skill-card p {
+    color: #687a5a;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
