@@ -1,4 +1,3 @@
-
 /* General Styles */
 * {
     margin: 0;
@@ -136,20 +135,37 @@ header {
 
 .project-card {
     background-color: #fffdf9;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 28px;
+    border-radius: 12px;
     border: 1px solid #e5d9ca;
+    box-shadow: 0 3px 8px rgba(59, 39, 35, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card h2 {
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(59, 39, 35, 0.15);
+}
+
+project-card h2 {
     margin-top: 0;
+    margin-bottom: 12px;
+    color: #3b2723;
+}
+
+.project-card p {
+    line-height: 1.6;
 }
 
 .project-card span {
     display: inline-block;
     color: #687a5a;
+    background-color: #f0f2eb;
     font-weight: bold;
+    padding: 6px 12px;
     margin-top: 15px;
+    border-radius: 20px;
+    font-size: 14px;
 }
 
 /* Footer */
@@ -182,7 +198,9 @@ footer {
     }
 
     .project-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
     }
 }
 
