@@ -185,3 +185,10 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Active Navigation Link */
+.nav-links a.active {
+    color: #c89452;
+    border-bottom: 2px solid #c89452;
+    padding-bottom: 5px;
+}
